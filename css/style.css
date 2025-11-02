@@ -618,3 +618,67 @@
   height: 100%;
   object-fit: cover;
 }
+
+/*--------------------------------------------------------------
+# Product Section
+--------------------------------------------------------------*/
+.product {
+  background: var(--surface-color);
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.product-item {
+  margin-bottom: 80px;
+}
+
+.product .content h6 {
+  color: var(--accent-color);
+}
+
+.product .feature-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.product .feature-list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.product .feature-list li::before {
+  content: "✔";
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.product-item img {
+  width: 100%; /* biar gambar isi penuh kolomnya */
+  max-width: 500px; /* batas maksimal lebar (supaya konsisten antar produk) */
+  height: auto; /* jaga rasio asli */
+  object-fit: cover; /* potong gambar agar tetap proporsional jika ukurannya beda-beda */
+  border-radius: 12px; /* sudut lembut */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* efek bayangan halus */
+}
+
+@media (max-width: 992px) {
+  .product-item img {
+    max-width: 100%; /* di layar kecil, biar penuh */
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive Adjustments */
+/* @media (max-width: 992px) {
+  .product .product-item {
+    text-align: center;
+  }
+
+  .product .product-item img {
+    margin-bottom: 30px;
+  }
+} */
