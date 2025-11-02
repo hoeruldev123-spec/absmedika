@@ -30,7 +30,7 @@
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100" tabindex="0"></body>
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
       <div class="spinner-grow text-primary" role="status"></div>
@@ -45,20 +45,24 @@
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
-          <a href="index.html#" class="nav-item nav-link active">Home</a>
-          <a href="index.html#about" class="nav-item nav-link">About Us</a>
-          <a href="index.html#prinsipal" class="nav-item nav-link">Our Prinsipals</a>
-          <a href="index.html#contact-us" class="nav-item nav-link">Contact Us</a>
+          <a href="#hero" class="nav-item nav-link">Home</a>
+          <a href="#about" class="nav-item nav-link">About Us</a>
+          <a href="#prinsipal" class="nav-item nav-link">Our Prinsipals</a>
+          <a href="#contact-us" class="nav-item nav-link">Contact Us</a>
+          <a href="our_team.html" class="nav-item nav-link">Our Team</a>
         </div>
       </div>
-      <a href="" class="btn btn-primary px-3 d-none d-lg-block">Hubungi Kami</a>
+      <a href="https://wa.me/+628111014774" target="_blank" rel="noopener noreferrer" class="btn btn-primary px-3 d-none d-lg-block">Hubungi Kami</a>
     </nav>
     <!-- Navbar End -->
+
+
     <main class="main">
       <!-- Carousel Start -->
-      <section id="hero" class="hero section">
+      <section id="hero" class="hero section" style="scroll-margin-top: 80px">
         <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
           <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -650,4 +654,5 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
   </body>
+
 </html>
