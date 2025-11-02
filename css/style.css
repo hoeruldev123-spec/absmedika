@@ -682,3 +682,18 @@
     margin-bottom: 30px;
   }
 } */
+
+/* Artikel */
+#latest-articles img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#latest-articles .card {
+  transition: transform 0.3s ease;
+}
+
+#latest-articles .card:hover {
+  transform: translateY(-5px);
+}
