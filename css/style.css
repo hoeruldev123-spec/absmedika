@@ -269,39 +269,70 @@
   justify-content: center;
 }
 
-/*** Principal ***/
+/* ============ Prinsipal Section ============ */
+.prinsipal-section {
+  background: #f8f9fa;
+  scroll-margin-top: 100px; /* agar tidak tertutup navbar */
+}
+
+/* Card Wrapper */
 .prinsipal-item {
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 45px rgba(0, 0, 0, 0.07);
-}
-.icon-blue {
-  filter: invert(30%) sepia(98%) saturate(7483%) hue-rotate(203deg) brightness(95%) contrast(101%);
-  width: 32px; /* sesuaikan ukuran */
-  height: 32px;
-}
-
-.prinsipal-item .prinsipal-icon {
-  width: 90px;
-  height: 90px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  text-align: left;
+  height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
-.prinsipal-item .prinsipal-icon img {
-  max-width: 60px;
-  max-height: 60px;
+/* Hover Effect */
+.prinsipal-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.prinsipal-item a.btn {
-  color: var(--primary);
+/* Gambar Prinsipal */
+.prinsipal-item img {
+  width: 160px;
+  height: 100px;
+  object-fit: contain;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
 }
 
-.prinsipal-item a.btn:hover {
-  color: #ffffff;
-  background: var(--primary);
-  border-color: var(--primary);
+.prinsipal-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Teks di bawah logo */
+.prinsipal-item h6 {
+  font-weight: 600;
+  color: #333;
+  margin-top: 2px; /* ubah dari default besar jadi lebih kecil */
+  margin-bottom: 4px; /* beri sedikit ruang sebelum paragraf */
+}
+
+.prinsipal-item p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767.98px) {
+  .prinsipal-item img {
+    width: 120px;
+    height: 120px;
+  }
+  .prinsipal-section {
+    scroll-margin-top: 80px;
+  }
 }
 
 /*** Appointment ***/
